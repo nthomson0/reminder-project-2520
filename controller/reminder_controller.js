@@ -41,11 +41,23 @@ let remindersController = {
   },
 
   update: (req, res) => {
-    // implement this code
+    database.cindy.reminders[req.params.id-1].title = req.body.title;
+    database.cindy.reminders[req.params.id-1].description = req.body.description;
+    database.cindy.reminders[req.params.id-1].completed = req.body.completed == "true";
+    console.log(req.body.completed);
+    console.log(database.cindy);
+    res.redirect("/reminders");
   },
 
   delete: (req, res) => {
-    // Implement this code
+    for (let i = 0; i < database.cindy.reminders.length; i++) {
+      if (req.params.id == database.cindy.reminders[i].id) {
+        const half1 = database.cindy.reminders.slice(0, i);
+        const half2 = database.cindy.reminders.slice(i+1);
+        database.cindy.reminders = half1.concat(half2);
+      }
+    }
+    res.redirect("/reminders");
   },
 };
 
