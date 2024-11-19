@@ -1,5 +1,6 @@
 let database = require("../database");
-
+// chagen cindy to req.user
+// set users to have a reminders []
 let remindersController = {
   list: (req, res) => {
     res.render("reminder/index", { reminders: database.cindy.reminders });
