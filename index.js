@@ -40,19 +40,19 @@ app.use(passport.session());
 
 app.get("/reminders", ensureAuthenticated, reminderController.list);
 
-app.get("/reminder/new", reminderController.new);
+app.get("/reminder/new",ensureAuthenticated, reminderController.new);
 
-app.get("/reminder/:id", reminderController.listOne);
+app.get("/reminder/:id",ensureAuthenticated, reminderController.listOne);
 
-app.get("/reminder/:id/edit", reminderController.edit);
+app.get("/reminder/:id/edit",ensureAuthenticated, reminderController.edit);
 
-app.post("/reminder/", reminderController.create);
-
-// Implement this yourself
-app.post("/reminder/update/:id", reminderController.update);
+app.post("/reminder/",ensureAuthenticated, reminderController.create);
 
 // Implement this yourself
-app.post("/reminder/delete/:id", reminderController.delete);
+app.post("/reminder/update/:id",ensureAuthenticated, reminderController.update);
+
+// Implement this yourself
+app.post("/reminder/delete/:id",ensureAuthenticated, reminderController.delete);
 
 // We will fix this soon.
 app.get("/register", authController.register);
