@@ -1,7 +1,7 @@
 {
   "name": "reminderlist",
   "version": "1.0.0",
-  "description": "",
+  "description": "Nov 19th, 2024\r Noah Thompson:\r I worked on the following tasks:\r 1. <update reminder> - This task is responsible for updating a reminder once  edited.\r 2. <Delete reminder> - This task is responsible for deleting a reminder.\r 3. <Insert Some Task Here> - This task is responsible for xyz functionality.",
   "main": "index.js",
   "scripts": {
     "start": "nodemon"
@@ -12,7 +12,7 @@
   },
   "author": "",
   "license": "ISC",
-  "homepage": "http",
+  "homepage": "http://http",
   "dependencies": {
     "ejs": "^3.1.10",
     "express": "^4.21.1",
@@ -23,5 +23,6 @@
     "passport": "^0.7.0",
     "passport-github2": "^0.1.12",
     "passport-local": "^1.0.0"
-  }
+  },
+  "devDependencies": {}
 }

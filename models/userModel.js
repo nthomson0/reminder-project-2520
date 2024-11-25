@@ -4,14 +4,24 @@ const database = [
     name: "Jimmy Smith",
     email: "jimmy123@gmail.com",
     password: "jimmy123!",
-    reminders: []
+    reminders: [{
+      id: 1,
+      title: "buy milk",
+      description: "go to safeway and buy milk",
+      completed: false,
+    },]
   },
   {
     id: 2,
     name: "Johnny Doe",
     email: "johnny123@gmail.com",
     password: "johnny123!",
-    reminders: []
+    reminders: [{
+      id: 1,
+      title: "buy soda",
+      description: "go to safeway and buy mpizza",
+      completed: true,
+    },]
   },
   {
     id: 3,
