@@ -4,16 +4,15 @@
   "description": "Nov 19th, 2024\r Noah Thompson:\r I worked on the following tasks:\r 1. <update reminder> - This task is responsible for updating a reminder once  edited.\r 2. <Delete reminder> - This task is responsible for deleting a reminder.\r 3. <Insert Some Task Here> - This task is responsible for xyz functionality.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon"
-  },
-  "repository": {
-    "type": "git",
-    "url": ""
+    "start": "nodemon",
+    "db": "npx prisma db push",
+    "studio": "npx prisma studio"
   },
   "author": "",
   "license": "ISC",
   "homepage": "http://http",
   "dependencies": {
+    "@prisma/client": "^6.0.1",
     "ejs": "^3.1.10",
     "express": "^4.21.1",
     "express-ejs-layouts": "^2.2.0",
@@ -24,5 +23,7 @@
     "passport-github2": "^0.1.12",
     "passport-local": "^1.0.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "prisma": "^6.0.1"
+  }
 }

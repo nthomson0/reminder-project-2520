@@ -1,6 +1,6 @@
 # reminder-project-2520
 Nov 19th, 2024
-Noah Thompson:
+Noah Thomson:
 I worked on the following tasks:
 1. <update reminder> - This task is responsible for updating a reminder once  edited.
 2. <Delete reminder> - This task is responsible for deleting a reminder.

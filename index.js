@@ -48,13 +48,10 @@ app.get("/reminder/:id/edit",ensureAuthenticated, reminderController.edit);
 
 app.post("/reminder/",ensureAuthenticated, reminderController.create);
 
-// Implement this yourself
 app.post("/reminder/update/:id",ensureAuthenticated, reminderController.update);
 
-// Implement this yourself
 app.post("/reminder/delete/:id",ensureAuthenticated, reminderController.delete);
 
-// We will fix this soon.
 app.get("/register", authController.register);
 app.get("/login", authController.login);
 app.post("/register", authController.registerSubmit);
